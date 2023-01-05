@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+    --transition: all 0.7s ease;
+    --transition1: all 0.9s ease;
+    --red:#f03737;
+    --dark: #292826;
+    --black: #030303;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    line-height: 1.6;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    padding: 8px 0;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.header{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("https://peoplehomecare.com.bd/wp-content/uploads/2021/06/patient-care-home-service-peoplehomecare.png") center/cover no-repeat;
+    min-height: 100vh;
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.head-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-top span{
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: var(--transition);
+    color:white;
+    font-size: 30px;
+}
+
+.head-top span:hover{
+    color: var(--red);
+}
+
+h3 a {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	margin-right: 30px;
+	font-size: 20px;
+}
+
+h3 a:hover {
+	color: var(--red);
+}
+
+.site-name {
+	display: flex;
+}
+
+p {
+	background-color:red;
+	padding:10px;
+	border-radius:15px;
+	color:white;
+	font-weight:bold;
+	font-size:20px;
+}
+
